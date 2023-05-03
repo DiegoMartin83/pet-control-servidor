@@ -1,0 +1,83 @@
+{{!-- <div class="cover-full">
+    <div class="row">
+        <div class="col-md-10 mx-auto ">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>Turnos</h3>
+                </div>
+                <div class="card text-center">
+                    <form action="../user/signup" method="post">
+                        <div class="conteiner">
+                            <input type="text" name="nombre" placeholder="Nombre" class="form-control" >
+                            <input type="text" name="apellido" placeholder="Apellido" class="form-control">
+                            <input type="number" name="dni" placeholder="DNI" class="form-control">
+                            <input type="number" name="telefono" placeholder="Telefono" class="form-control">
+                            <input type="email" name="mail" placeholder="Mail" class="form-control">
+                            <input type="password" name="contrasenia" placeholder="Contraseña" class="form-control">
+                            <input type="password" name="repassword" placeholder="Repetir Contraseña"
+                                class="form-control">
+                        </div>
+                        <button style="width: 100%;; background-color: rgb(216, 214, 214);color:
+                            black; ">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+
+<div class="col-12">
+  <div class="table-responsive">
+    
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            
+            <th scope="col">Numero de consulta</th>
+            <th scope="col">Nombre </th>
+            <th scope="col">Apellido</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Consulta</th>
+           
+
+            
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+          {{#each result}}
+          <tr>
+
+
+            
+            <td>{{idcontacto}}</td>
+            <td>{{nombre}}</td>
+            <td>{{apellido}}</td>
+            <td>{{email}}</td>
+            <td>{{consulta}}</td>
+
+           
+
+          </tr>
+        </tbody>
+
+
+
+        {{else}}
+        <tr>
+          <td colspan="4">No hay consultas!!!</td>
+        </tr>
+        {{/each}}
+</table>
+    
+   
+  </div>
+</div>
+
+  
+</table>
+ </div>
